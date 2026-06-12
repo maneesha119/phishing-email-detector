@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Phishing Email Detector</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🛡️ Phishing Email Detector</h1>
+
+    <p class="subtitle">
+        AI Powered Email Threat Analysis System
+    </p>
+
+    <div class="stats">
+
+        <div class="card">
+            <h3>Dataset</h3>
+            <p>82,486 Emails</p>
+        </div>
+
+        <div class="card">
+            <h3>Model</h3>
+            <p>Random Forest</p>
+        </div>
+
+        <div class="card">
+            <h3>Accuracy</h3>
+            <p>98.67%</p>
+        </div>
+
+    </div>
+
+    <form method="POST">
+
+        <textarea
+            name="email"
+            placeholder="Paste suspicious email content here..."
+            required></textarea>
+
+        <button type="submit">
+
+            Analyze Email
+
+        </button>
+
+    </form>
+
+    {% if result %}
+
+        <div class="result {{ result_class }}">
+
+            <h2>{{ result }}</h2>
+
+            <p>
+                Confidence Score:
+                {{ probability }}%
+            </p>
+
+        </div>
+
+    {% endif %}
+
+</div>
+
+</body>
+
+</html>
