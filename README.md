@@ -1,43 +1,29 @@
+<<<<<<< HEAD
 # Phishing Email Detection System
 
-A Machine Learning based phishing email detection system built using Python, Scikit-Learn, Random Forest, and Flask.
+## Overview
+Machine Learning based system to detect phishing emails using Flask web application.
 
 ## Features
-
-- Detect phishing emails
-- TF-IDF text processing
-- Random Forest Classifier
-- Flask Web Interface
-- Confidence Score Display
+- Detect phishing emails in real-time
+- Machine Learning model (Random Forest)
+- Web interface using Flask
+- Confidence score output
 
 ## Dataset
+82,486 email samples used for training.
 
-- 82,486 email samples
-- Balanced dataset
+## Accuracy
+98.67% using Random Forest Classifier
 
-## Model Performance
-
-| Model | Accuracy |
-|---------|---------|
-| Naive Bayes | 96.16% |
-| Logistic Regression | 98.18% |
-| Random Forest | 98.67% |
-
-## Technologies
-
+## Tech Stack
 - Python
-- Scikit-Learn
 - Flask
-- HTML
-- CSS
+- Scikit-Learn
+- HTML/CSS
 
-## Run Project
-
-```bash
-pip install -r requirements.txt
-python app.py
-```
-
-Open:
-
-http://127.0.0.1:5000
+## How to Run
+=======
+# phishing-email-detector
+Machine Learning based Phishing Email Detection System using Flask
+>>>>>>> 2e5e83f8e4890e8919118c12b341639456875712
